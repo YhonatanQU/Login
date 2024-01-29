@@ -36,6 +36,8 @@ body{
 }
 
 .form{
+    width: 60%;
+
 }
 
 .form__title,
@@ -73,11 +75,11 @@ body{
 }
 
 .form__input{
-    width: 60%;
     background: #eee;
     border: none;
     color: #8d8a8a;
     padding: 10px 10px;
+    width: 100%;
 }
 
 .form__button{

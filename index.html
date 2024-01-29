@@ -10,7 +10,7 @@
 </head>
 <body class="display-flex justify-content-center align-items-center">
     <main class="container">
-        <section class="container__form container__form--hidden container__form--signIn">
+        <section class="container__form container__form--signIn">
             <form class="form display-flex flex-direction-column justify-content-center align-items-center" action="#">
                 <h1 class="form__title">Sign In</h1>
                 <div class="form__social">
@@ -25,7 +25,7 @@
                 <button class="form__button panel__button">Sign In</button>
             </form>
         </section>
-        <section class="container__form ">
+        <section class="container__form container__form--hidden ">
             <form class="form  display-flex flex-direction-column justify-content-center align-items-center" action="#">
                 <h1 class="form__title">Create Account</h1>
                 <div class="form__social">
@@ -42,12 +42,12 @@
         </section>
         <section class="container__overlay">
             <div class="overlay">
-                <div class="overlay__panel overlay__panel--left display-flex align-items-center flex-direction-column ">
+                <div class="overlay__panel overlay__panel--left container__form--hidden display-flex align-items-center flex-direction-column ">
                     <h1 class="panel__title ">Welcome Back!</h1>
                     <p class="panel__paragraph">To keep connected with us please login with your personal info</p>
                     <button class="panel__button" id="signIn">Sign In</button>
                 </div>
-                <div class="overlay__panel overlay__panel--right container__form--hidden display-flex align-items-center flex-direction-column">
+                <div class="overlay__panel overlay__panel--right  display-flex align-items-center flex-direction-column">
                     <h1 class="panel__title">Hello, Friend!</h1>
                     <p class="panel__paragraph">Enter your personal details and start journey with us</p>
                     <button class="panel__button" id="signUp">Sign Up</button>
