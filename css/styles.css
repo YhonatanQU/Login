@@ -1,0 +1,122 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background-color:#f6f5f7;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22), 0 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    height: 70% ;
+    width: 480px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.container__form{
+    width: 100%;
+}
+
+.form{
+    border: 1px solid red;
+}
+
+.form__title,
+.form__input,
+.form__link,
+.form__button{
+    margin-top: 10px;
+}
+
+.form__social{
+    margin: 10px 0;
+}
+
+.social__icon{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1em;
+    font-style: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #373737;
+}
+
+.form__text{
+    font-size: .8em;
+}
+
+.form__input{
+    width: 60%;
+    background: #eee;
+    border: none;
+    color: #8d8a8a;
+    padding: 10px 10px;
+}
+
+.form__button{
+    background: #FF4B2B !important;
+}
+
+.container__form--hidden{
+    display: none !important;
+}
+
+.container__overlay{
+    padding: 10px;
+    background:linear-gradient(to right, #FF4B2B, #FF416C);
+    border-radius: 10px 10px 0 0 ;
+    -webkit-border-radius: 10px 10px 0 0 ;
+    -moz-border-radius: 10px 10px 0 0 ;
+    -ms-border-radius: 10px 10px 0 0 ;
+    -o-border-radius: 10px 10px 0 0 ;
+}
+
+.panel__title, 
+.panel__paragraph,
+.panel__button{
+    margin-top:15px;
+    color:#f6f5f7;
+}
+
+.panel__paragraph{
+    width: 75%;
+    text-align: center;
+}
+
+.panel__button{
+    background:transparent;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: 1px solid #f6f5f7;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}

@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>Login</title>
 </head>
-<body>
-    <div class="container">
-        hola
-    </div>
+<body class="display-flex justify-content-center align-items-center">
+    <main class="container">
+        <section class="container__form container__form--hidden container__form--signIn">
+            <form class="form display-flex flex-direction-column justify-content-center align-items-center" action="#">
+                <h1 class="form__title">Sign In</h1>
+                <div class="form__social">
+                    <a class="social__icon social__icon--hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social__icon" href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a class="social__icon" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span class="form__text">Or use your account</span>
+                <input class="form__input" type="text" placeholder="Email">
+                <input class="form__input" type="password" placeholder="Password">
+                <a class="form__link" href="">Forgot your password?</a>
+                <button class="form__button panel__button">Sign In</button>
+            </form>
+        </section>
+        <section class="container__form ">
+            <form class="form  display-flex flex-direction-column justify-content-center align-items-center" action="#">
+                <h1 class="form__title">Create Account</h1>
+                <div class="form__social">
+                    <a href="" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" class="social__icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="" class="social__icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span class="form__text">Or use your email for registration</span>
+                <input class="form__input" type="text" placeholder="Name">
+                <input class="form__input" type="text" placeholder="Email">
+                <input class="form__input" type="password" placeholder="Password">
+                <button class="form__button panel__button">Sign Up</button>
+            </form>
+        </section>
+        <section class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay__panel--left display-flex align-items-center flex-direction-column ">
+                    <h1 class="panel__title ">Welcome Back!</h1>
+                    <p class="panel__paragraph">To keep connected with us please login with your personal info</p>
+                    <button class="panel__button" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay__panel--right container__form--hidden display-flex align-items-center flex-direction-column">
+                    <h1 class="panel__title">Hello, Friend!</h1>
+                    <p class="panel__paragraph">Enter your personal details and start journey with us</p>
+                    <button class="panel__button" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
